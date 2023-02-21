@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,s=0,n,t;
+clrscr();
+printf("\n enter a number");
+scanf("%d,&n);
+t=n;
+while(n>0)
+{
+i=n%10;
+s=(s*10)+i;
+n=n/10;
+}
+if(s==t)
+{
+printf("\n the given number is palindrome");
+}
+else
+{
+printf("\n the given number is not palindrome");
+}
+getch();
+}
